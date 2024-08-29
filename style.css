@@ -4,86 +4,105 @@
 }
 header {
   margin: auto;
-  width: 20%;
 }
 
+a:hover,
+li:hover {
+  color: black;
+  background-color: rgb(255, 0, 149);
+}
 nav li {
-  list-style: none;
   display: inline-block;
-  padding: 10px;
+  padding: 1rem;
+  color: #ee0581;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  font-size: 2rem;
 }
 body {
   font-weight: bold;
   background-color: rgb(251, 94, 207);
 }
 div {
-  margin-top: 1rem;
+  margin: 1rem;
   padding: 2rem;
+  font-size: 1.7rem;
 }
 #img_header_home {
-  height: 200px;
+  height: 25rem;
   width: 100%;
   object-fit: cover;
 }
 .img_home {
-  height: 200px;
-  width: 300px;
+  height: 12.5rem;
+  width: 18.75rem;
   object-fit: cover;
-  margin-bottom: 10px;
-}
-.img_header_post {
-  width: 400px;
-  height: 300px;
-  margin-right: 20px;
-  float: left;
+  margin-bottom: 1.5rem;
 }
 
 h1 {
   text-align: center;
-  padding-bottom: 20px;
+  padding: 2.8rem;
+  font-size: 3.4rem;
 }
 h2 {
   color: white;
-  padding-bottom: 10px;
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
 }
-div:nth-child(2) {
+div:nth-child(1) {
   background-color: coral;
 }
-div:nth-child(3) {
+div:nth-child(2) {
   background-color: mediumorchid;
+}
+div:nth-child(3) {
+  background-color: greenyellow;
 }
 div:nth-child(4) {
-  background-color: greenyellow;
+  background-color: rgb(0, 183, 255);
 }
-div:nth-child(5) {
-  background-color: cyan;
+
+.sub-pages p {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  text-align: justify;
 }
+
 #body_post1 {
   background-color: mediumorchid;
-  padding: 20px;
+  padding: 2rem;
 }
 #body_post2 {
-  background-color: greenyellow;
-  padding: 20px;
+  background-color: rgb(71, 255, 47);
+  padding: 2rem;
 }
 #body_post3 {
   background-color: cyan;
-  padding: 20px;
+  padding: 2rem;
 }
 .location_date {
   font-weight: bolder;
   color: #ee0581;
 }
 
-a:hover {
-  color: black;
-  background-color: blue;
+.img_header_post {
+  width: 50rem;
+  height: 37rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  float: left;
 }
-
-p.nav_pages {
-  width: 40%;
-  margin: auto;
-  margin-top: 3rem;
-  font-size: xx-large;
-  text-align: center;
+@media (max-width: 900px) {
+  .img_header_post {
+    width: calc(100% - 2rem); /* Breite des Bildes minus rechter Padding */
+    height: auto; /* Beibehaltung des Seitenverhältnisses */
+    float: none; /* Deaktiviert das Floaten */
+    margin-right: 0; /* Kein zusätzlicher Abstand rechts */
+    margin-bottom: 1rem;
+  }
 }
