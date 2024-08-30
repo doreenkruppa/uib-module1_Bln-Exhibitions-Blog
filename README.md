@@ -1,6 +1,6 @@
 # Berlins Exhibitions Blog
 
-## Exercise Kurs-Modul 1 - UserInterfaceBasics (UIB) - HTML/CSS
+## Exercise Course-Module 1 - UserInterfaceBasics (UIB) - HTML/CSS
 
 Created an index.html page and a posts directory containing the blog posts.
 Inside the posts directory created a HTML file for each post.
